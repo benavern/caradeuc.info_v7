@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vueWording from 'vue-wording'
+import wording from '@/wording.json'
+
+Vue.use(vueWording, {lang: 'fr', wording})
 
 Vue.config.productionTip = false
 
