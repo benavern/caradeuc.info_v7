@@ -2,18 +2,26 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import {
-  Home
+  Home,
+  Components
 } from '@/pages'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history', // no hands on on backend for the moment we stick on the hash technic
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home
+    },
+
+    // Remove on production ?
+    {
+      path: '/components',
+      name: 'Components',
+      component: Components
     }
   ]
 })
