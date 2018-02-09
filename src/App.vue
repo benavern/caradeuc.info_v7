@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Accueil</router-link>
-      <router-link to="/components">Components</router-link>
-    </nav>
-    <router-view/>
+    <z-header />
+    <div id="content">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
+import ZHeader from '@/components/ZHeader'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { ZHeader }
 }
 </script>
 
@@ -59,8 +60,5 @@ table
 a
   color: $primary
   text-decoration: none
-
-  &:hover
-    text-decoration: underline
 
 </style>

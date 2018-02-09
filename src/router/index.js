@@ -14,14 +14,22 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        displayName: 'Accueil',
+        description: 'Un peu de tout...'
+      }
     },
 
     // Remove on production ?
     {
       path: '/components',
       name: 'Components',
-      component: Components
+      component: Components,
+      meta: {
+        displayName: 'Mes composants',
+        description: 'Pour construire ce site.'
+      }
     }
   ]
 })

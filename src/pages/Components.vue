@@ -5,8 +5,7 @@
 
       <div v-for="(color, index) in colors"
             :key="index">
-        <span :class="['color-demo', color]">
-        </span>
+        <span :class="['color-demo', color]"></span>
 
         {{ color }}
 
@@ -21,6 +20,7 @@
       <z-button @click.native="buttonTest">
         {{ $t('TEST') }}
       </z-button>
+
     </section>
 
   </div>
@@ -36,7 +36,7 @@ export default {
   },
   data () {
     return {
-      colors: ['black', 'gray-dark', 'gray', 'gray-light', 'white', 'green']
+      colors: ['black', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'white', 'green']
     }
   },
   methods: {
@@ -61,7 +61,7 @@ export default {
     height: 1em
     width: 1em
 
-    $colors: 'black' $black, 'gray-dark' $gray-dark, 'gray' $gray, 'gray-light' $gray-light, 'white' $white, 'green' $green
+    $colors: 'black' $black, 'gray-dark' $gray-dark, 'gray' $gray, 'gray-light' $gray-light, 'gray-lighter' $gray-lighter, 'white' $white, 'green' $green
     @each $color in $colors
       &.#{nth($color, 1)}
         background-color: nth($color, 2)
