@@ -14,8 +14,11 @@
 
       <div class="social-links">
         <ul>
-          <li>
-            <a href="" target="_blank">link</a>
+          <li v-for="(social, index) in socialLinks"
+              :key="index">
+            <a :href="social.link" target="_blank">
+              <z-icon :name="social.icon"/>
+            </a>
           </li>
         </ul>
       </div>
@@ -44,11 +47,30 @@
 </template>
 
 <script>
+import ZIcon from '@/components/ZIcon'
+
 export default {
   name: 'ZHeader',
+  components: {
+    ZIcon
+  },
   data () {
     return {
-      menuVisible: false
+      menuVisible: false,
+      socialLinks: [
+        {
+          icon: 'github',
+          link: 'https://github.com/benavern'
+        },
+        {
+          icon: 'twitter',
+          link: 'https://twitter.com/benavern'
+        },
+        {
+          icon: 'linkedin',
+          link: 'https://www.linkedin.com/in/benjamincaradeuc'
+        }
+      ]
     }
   },
   methods: {
@@ -104,6 +126,12 @@ export default {
       .social-links
         ul
           list-style: none
+          padding: 1rem 0
+          font-size: 1.2rem
+
+          li a
+            display: block
+            padding: .2em
 
     .menu
       position: absolute
