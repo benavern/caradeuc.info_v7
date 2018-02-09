@@ -9,7 +9,7 @@ import {
 Vue.use(Router)
 
 export default new Router({
-  // mode: 'history', // no hands on on backend for the moment we stick on the hash technic
+  // mode: 'history', // no more hash with no ssr ?
   routes: [
     {
       path: '/',

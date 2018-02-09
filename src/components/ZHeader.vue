@@ -90,6 +90,9 @@ export default {
       .logo
         a
           color: $black
+          h1
+            font-family: "Brown Fox", "Raleway", sans-serif
+            font-weight: normal
 
       .menu-switcher
         font-size: 2rem
