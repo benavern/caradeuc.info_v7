@@ -3,7 +3,7 @@
     <div class="header-content">
       <div class="logo">
         <router-link to="/">
-          <h1>BC</h1>
+          <h1 class="font-fantasy">BC</h1>
         </router-link>
       </div>
 
@@ -91,7 +91,6 @@ export default {
         a
           color: $black
           h1
-            font-family: "Brown Fox", "Raleway", sans-serif
             font-weight: normal
 
       .menu-switcher

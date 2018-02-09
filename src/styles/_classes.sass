@@ -1,0 +1,16 @@
+// Colors
+$colors: 'black' $black, 'gray-dark' $gray-dark, 'gray' $gray, 'gray-light' $gray-light, 'gray-lighter' $gray-lighter, 'white' $white, 'green' $green
+
+@each $color in $colors
+  &.bg-#{nth($color, 1)}
+    background-color: nth($color, 2)
+  &.color-#{nth($color, 1)}
+    color: nth($color, 2)
+
+// fonts
+.font-title
+  font-family: $title-font
+.font-text
+  font-family: $text-font
+.font-fantasy
+  font-family: $fantasy-font

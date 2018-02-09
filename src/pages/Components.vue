@@ -5,7 +5,7 @@
 
       <div v-for="(color, index) in colors"
             :key="index">
-        <span :class="['color-demo', color]"></span>
+        <span :class="['color-demo', `bg-${color}`]"></span>
 
         {{ color }}
 
@@ -60,10 +60,5 @@ export default {
     border: 1px solid $black
     height: 1em
     width: 1em
-
-    $colors: 'black' $black, 'gray-dark' $gray-dark, 'gray' $gray, 'gray-light' $gray-light, 'gray-lighter' $gray-lighter, 'white' $white, 'green' $green
-    @each $color in $colors
-      &.#{nth($color, 1)}
-        background-color: nth($color, 2)
 
 </style>
