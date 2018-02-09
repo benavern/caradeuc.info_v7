@@ -9,7 +9,13 @@
 
       <div class="menu-switcher"
            @click="toggleMenu">
-        {{ menuVisible ? '&times;' : '&Xi;' }}
+        <template v-if="!menuVisible">
+          <z-icon name="menu-open"/>
+        </template>
+
+        <template v-if="menuVisible">
+          <z-icon name="menu-close"/>
+        </template>
       </div>
 
       <div class="social-links">

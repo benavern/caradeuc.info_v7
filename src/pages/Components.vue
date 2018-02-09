@@ -61,7 +61,7 @@ export default {
   data () {
     return {
       colors: ['black', 'gray-dark', 'gray', 'gray-light', 'gray-lighter', 'white', 'green'],
-      icons: ['github', 'linkedin', 'twitter']
+      icons: ['github', 'linkedin', 'twitter', 'menu-open', 'menu-close']
     }
   },
   methods: {
