@@ -9,7 +9,7 @@ import {
 Vue.use(Router)
 
 export default new Router({
-  // mode: 'history', // no more hash with no ssr ?
+  mode: 'history', // no more hash with no ssr ?
   routes: [
     {
       path: '/',
