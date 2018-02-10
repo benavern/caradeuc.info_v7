@@ -105,6 +105,7 @@ export default {
     width: $menu-width
     background-color: $white
     border-right: 1px solid $gray-light
+    box-shadow: 0 0 1rem $gray-light
     z-index: 999
 
     .header-content

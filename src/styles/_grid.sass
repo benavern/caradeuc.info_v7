@@ -1,0 +1,22 @@
+.grid
+  display: flex
+  flex-wrap: wrap
+  margin: -#{$gutter / 2}
+  align-items: stretch
+
+  & > .item
+    width: 100%
+    $breakpoints: 'xs' $x-small, 's' $small, 'm' $medium, 'l' $large, 'xl' $x-large, 'xxl' $xx-large
+
+    @each $breakpoint in $breakpoints
+      @media (min-width: nth($breakpoint, 2))
+        @for $i from 1 through 12
+          &.#{nth($breakpoint, 1)}-#{$i}
+            width: #{100% / $i}
+
+        &.#{nth($breakpoint, 1)}-first
+          order: -1
+
+    .box
+      margin: #{$gutter / 2}
+      padding: $gutter
