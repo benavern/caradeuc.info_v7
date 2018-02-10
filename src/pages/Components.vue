@@ -60,7 +60,7 @@
         </div>
         <div class="item l-3">
           <div class="box">
-            <h5>OpenSans</h5>
+            <h5>Open Sans</h5>
             <h6>Pour le texte</h6>
             <p class="font-text demo-box">
               Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.
@@ -69,7 +69,7 @@
         </div>
         <div class="item l-3">
           <div class="box">
-            <h5>Brown Fox</h5>
+            <h5>LeviReBrushed</h5>
             <h6>Pour les fantaisies</h6>
             <p class="font-fantasy demo-box">
               Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.

@@ -7,13 +7,23 @@ $colors: 'black' $black, 'gray-dark' $gray-dark, 'gray' $gray, 'gray-light' $gra
   &.color-#{nth($color, 1)}
     color: nth($color, 2)
 
-// fonts
+// fonts family
 .font-title
   font-family: $title-font
 .font-text
   font-family: $text-font
 .font-fantasy
   font-family: $fantasy-font
+  font-weight: normal // bold is not nice
+
+// font weight
+.font-light
+  font-weight: lighter
+.font-normal
+  font-weight: normal
+.font-bold
+  font-weight: bold
+
 
 // text align
 .text-left

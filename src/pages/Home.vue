@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>
+    <h1 class="font-fantasy">
       {{ $t('HELLO_WORLD') }}
     </h1>
   </div>

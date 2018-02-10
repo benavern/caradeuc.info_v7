@@ -38,7 +38,7 @@
           <li v-for="(route, index) in $router.options.routes"
               :key="index">
             <router-link :to="route.path">
-              <h2>
+              <h2 class="font-fantasy">
                 {{ route.meta.displayName }}
               </h2>
               <h6>
