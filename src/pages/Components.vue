@@ -15,11 +15,13 @@
     </section>
 
     <section id="colors">
-      <h1>Colors</h1>
+      <h1>Couleurs</h1>
 
       <p>
         Des couleurs très monochrome avec une couleur verte, choisie avec amour, pour attirer l'oeil des passants.
       </p>
+
+      <hr>
 
       <div class="grid">
         <div v-for="(color, index) in colors"
@@ -37,6 +39,45 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="fonts">
+      <h1>Polices de caractère</h1>
+
+      <p>Des polices libres, chinées sur le web.</p>
+
+      <hr>
+
+      <div class="grid">
+        <div class="item l-3">
+          <div class="box">
+            <h5>Raleway</h5>
+            <h6>Pour les titres</h6>
+            <p class="font-title demo-box">
+              Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.
+            </p>
+          </div>
+        </div>
+        <div class="item l-3">
+          <div class="box">
+            <h5>OpenSans</h5>
+            <h6>Pour le texte</h6>
+            <p class="font-text demo-box">
+              Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.
+            </p>
+          </div>
+        </div>
+        <div class="item l-3">
+          <div class="box">
+            <h5>Brown Fox</h5>
+            <h6>Pour les fantaisies</h6>
+            <p class="font-fantasy demo-box">
+              Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <section id="buttons">
@@ -75,6 +116,8 @@
     <section id="icons">
       <h1>Icones</h1>
 
+      <p>Parceque c'est quand même mieux que des images...</p>
+
       <div class="grid">
         <div v-for="(icon, index) in icons"
             :key="index"
@@ -109,7 +152,11 @@
     </section>
 
     <section id="grid">
-      <h1>Grid</h1>
+      <h1>Grille</h1>
+
+      <p>
+        Une grille très simple mais puissante qui exploite la propriété flexbox écrite en 15 lignes de sass
+      </p>
 
       <div class="grid">
         <div class="item xs-1"><div class="box demo-box">1</div></div>
@@ -300,6 +347,13 @@ export default {
       font-family: monospace
       overflow-x: auto
 
+  .demo-box
+    background-color: $gray-lighter
+    text-align: center
+    // font-weight: bold
+    border: 1px solid $gray-light
+    padding: 1rem
+
   #colors
     .color-demo
       display: inline-block
@@ -307,11 +361,8 @@ export default {
       height: 1em
       width: 1em
 
-  #grid
+  #fonts
     .demo-box
-      background-color: $gray-lighter
-      text-align: center
-      font-weight: bold
-      border: 1px solid $gray-light
-
+      overflow: auto
+      max-height: 12rem
 </style>
