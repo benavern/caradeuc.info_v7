@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <section class="container">
     <h1 class="font-fantasy">
       {{ $t('HELLO_WORLD') }}
     </h1>
-  </div>
+  </section>
 </template>
 
 <script>
