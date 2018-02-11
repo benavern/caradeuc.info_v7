@@ -24,7 +24,7 @@
       <div class="item m-2">
     <h5>Resultat</h5>
         <div class="box">
-          <z-button>
+          <z-button @click.native="doSomething">
             button text
           </z-button>
         </div>
