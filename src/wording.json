@@ -1,5 +1,9 @@
 {
   "fr": {
+    "HELLO_WORLD": "Salut le monde!",
+    "TEST": "Ceci est un test!"
+  },
+  "en": {
     "HELLO_WORLD": "Hello, World!",
     "TEST": "This is a test!"
   }
