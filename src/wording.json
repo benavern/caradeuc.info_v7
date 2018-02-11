@@ -35,7 +35,7 @@
       },
       "GRID": {
         "TITLE": "Grille",
-        "DESCRIPTION": "Une grille très simple mais puissante qui exploite la propriété <b>flexbox</b> écrite en 15 lignes de SASS."
+        "DESCRIPTION": "Une grille très simple mais puissante qui exploite la propriété <b>flexbox</b> écrite en <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">30 lignes de SASS.</a>"
       },
       "LANGUAGE": {
         "TITLE": "Langage",
@@ -80,7 +80,7 @@
       },
       "GRID": {
         "TITLE": "Grid",
-        "DESCRIPTION": "A very simple but powerfull grid using <b>flexbox</b> and written in 15 lines of SASS."
+        "DESCRIPTION": "A very simple but powerfull grid using <b>flexbox</b> and written in <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">30 lines of SASS.</a>"
       },
       "LANGUAGE": {
         "TITLE": "Language",

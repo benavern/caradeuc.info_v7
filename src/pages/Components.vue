@@ -68,7 +68,7 @@ export default {
         overflow-x: auto
         border: 1px solid $black
         border-radius: .3rem
-        box-shadow: 0 0 .5rem rgba($black, .5)
+        box-shadow: 0 0 1rem rgba($gray-dark, .5)
         padding-top: 3rem
 
         &:before

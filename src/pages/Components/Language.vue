@@ -7,6 +7,8 @@
       {{ $t('MY_COMPONENTS_PAGE.LANGUAGE.DESCRIPTION') }}
     </p>
 
+    <hr>
+
     <p v-html="$t('MY_COMPONENTS_PAGE.LANGUAGE.CURRENT_LANGUAGE', { currentLanguage })">Chargement ...</p>
 
     <div class="grid">
@@ -68,4 +70,11 @@ export default {
   .big-flag
     font-size: 8rem
     cursor: pointer
+    filter: drop-shadow(0 0 .5rem rgba($black, .5))
+    will-change: transform
+    transition: all .3s
+
+    &:hover
+      transform: scale(1.5)
+      filter: drop-shadow(0 0 1rem rgba($black, .8))
 </style>

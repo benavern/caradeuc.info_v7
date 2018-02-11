@@ -45,6 +45,10 @@
     &lt;div class="box"&gt;4&lt;/div&gt;
   &lt;/div&gt;
 
+  &lt;div class="item push-m-4 push-xxl-0 m-2 xxl-1"&gt;
+    &lt;div class="box"&gt;Push&lt;/div&gt;
+  &lt;/div&gt;
+
 &lt;/div&gt;
 </pre>
         </div>
@@ -60,7 +64,7 @@
               <div class="box demo-box">1</div>
             </div>
             <div class="item xs-first">
-              <div class="box demo-box">1-1</div>
+              <div class="box demo-box">First</div>
             </div>
 
             <div class="item xs-1 m-2">
@@ -71,6 +75,10 @@
             </div>
             <div class="item xs-2 m-4">
               <div class="box demo-box">4</div>
+            </div>
+
+            <div class="item push-m-4 push-xxl-0 m-2 xxl-1">
+              <div class="box demo-box">Push</div>
             </div>
           </div>
         </div>
@@ -96,3 +104,10 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+  .demo-box
+    font-size: 2rem
+    font-weight: bold
+    text-align: center
+</style>
