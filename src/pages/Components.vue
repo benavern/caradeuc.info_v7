@@ -1,15 +1,16 @@
 <template>
   <div>
     <section id="intro">
-      <h1>Mes composants</h1>
+      <h1>
+        {{ $t('MY_COMPONENTS_PAGE.INTRO.TITLE') }}
+      </h1>
 
       <p>
-        J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de sass (version indentée).
+        {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT1') }}
       </p>
 
       <p>
-        Vous vous trouvez actuellement sur la page qui m'a permit de faire des tests.
-        L'ordre des éléments de la page ne suit pas de logique particulière.
+        {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT2') }}
       </p>
 
     </section>
@@ -24,6 +25,8 @@
 
     <components-grid />
 
+    <components-language />
+
   </div>
 </template>
 
@@ -33,6 +36,7 @@ import ComponentsFonts from './Components/Fonts'
 import ComponentsButtons from './Components/Buttons'
 import ComponentsIcons from './Components/Icons'
 import ComponentsGrid from './Components/Grid'
+import ComponentsLanguage from './Components/Language'
 
 export default {
   name: 'Components',
@@ -41,7 +45,8 @@ export default {
     ComponentsFonts,
     ComponentsButtons,
     ComponentsIcons,
-    ComponentsGrid
+    ComponentsGrid,
+    ComponentsLanguage
   }
 }
 </script>
@@ -62,7 +67,6 @@ export default {
 
       .demo-box
         background-color: $gray-lighter
-        text-align: center
         font-size: 1.2rem
         border: 1px solid $gray-light
         padding: 1rem

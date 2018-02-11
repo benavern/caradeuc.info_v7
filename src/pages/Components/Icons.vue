@@ -1,8 +1,12 @@
 <template>
   <section id="icons">
-      <h1>Icones</h1>
+      <h1>
+        {{ $t('MY_COMPONENTS_PAGE.ICONS.TITLE')}}
+      </h1>
 
-      <p>Parceque c'est quand même mieux que des images...</p>
+      <p>
+        {{ $t('MY_COMPONENTS_PAGE.ICONS.DESCRIPTION')}}
+      </p>
 
       <div class="grid">
         <div v-for="(icon, index) in icons"
@@ -20,7 +24,9 @@
       <div class="grid">
         <div class="item m-2">
           <div class="box">
-            <h5>Exemple</h5>
+            <h5>
+              {{ $t('EXAMPLE') }}
+            </h5>
 
 <pre v-pre>
 &lt;z-icon name="twitter" color="#abc"/&gt;
@@ -29,7 +35,9 @@
         </div>
         <div class="item m-2">
           <div class="box">
-            <h5>Resultat</h5>
+            <h5>
+              {{ $t('RESULT') }}
+            </h5>
 
             <z-icon name="twitter" color="#abc"/>
           </div>
@@ -48,7 +56,7 @@ export default {
   },
   data () {
     return {
-      icons: ['github', 'linkedin', 'twitter', 'menu-open', 'menu-close']
+      icons: ['github', 'linkedin', 'twitter', 'menu-open', 'menu-close', 'uk-flag', 'fr-flag']
     }
   }
 }

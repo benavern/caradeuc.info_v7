@@ -1,10 +1,92 @@
 {
   "fr": {
     "HELLO_WORLD": "Salut le monde!",
-    "TEST": "Ceci est un test!"
+    "LOREM": "Cupcake ipsum dolor sit amet. Cheesecake ice cream halvah gummi bears icing. Macaroon gingerbread jelly-o cheesecake tiramisu marzipan cheesecake topping. Liquorice cotton candy cake cookie chupa chups.",
+    "EXAMPLE": "Exemple",
+    "RESULT": "Resultat",
+    "LANGUAGE_FR": "Français",
+    "LANGUAGE_EN": "Anglais",
+    "MY_COMPONENTS_PAGE": {
+      "INTRO": {
+        "TITLE": "Mes composants",
+        "TEXT1": "J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de SASS (version indentée).",
+        "TEXT2": "Vous vous trouvez actuellement sur la page qui m'a permit de faire des tests. L'ordre des éléments de la page ne suit pas de logique particulière."
+      },
+      "COLORS": {
+        "TITLE": "Couleurs",
+        "DESCRIPTION": "Des couleurs très monochrome avec une couleur verte, choisie avec amour, pour attirer l'oeil des passants."
+      },
+      "FONTS": {
+        "TITLE": "Polices de caractère",
+        "DESCRIPTION": "Des polices libres de droit, chinées sur le web.",
+        "RALEWAY_DESC": "Pour les titres",
+        "OPEN_SANS_DESC": "Pour le texte",
+        "LEVI_RE_BRUSHED_DESC": "Pour les fantaisies"
+      },
+      "BUTTONS": {
+        "TITLE": "Boutons",
+        "DESCRIPTION": "Des boutons, parce-que ça peut parfois être utile.",
+        "BUTTON_TEXT": "Cliquez moi!",
+        "BUTTON_ALERT": "Ah, merci. \nVous voyez comme c'est utile ?"
+      },
+      "ICONS": {
+        "TITLE": "Icones",
+        "DESCRIPTION": "De toutes les couleurs, de toutes les tailles et surtout de toutes les formes!"
+      },
+      "GRID": {
+        "TITLE": "Grille",
+        "DESCRIPTION": "Une grille très simple mais puissante qui exploite la propriété <b>flexbox</b> écrite en 15 lignes de SASS."
+      },
+      "LANGUAGE": {
+        "TITLE": "Langage",
+        "DESCRIPTION": "Parcequ'il n'y a aucune raison pour que je ne parle qu'aux français, je voulais que mon site soit lisible par tout le monde",
+        "CURRENT_LANGUAGE": "Le langage sélectionné est : <b>#{currentLanguage}</b>"
+      }
+    }
   },
   "en": {
     "HELLO_WORLD": "Hello, World!",
-    "TEST": "This is a test!"
+    "LOREM": "Cupcake ipsum dolor sit amet. Cheesecake ice cream halvah gummi bears icing. Macaroon gingerbread jelly-o cheesecake tiramisu marzipan cheesecake topping. Liquorice cotton candy cake cookie chupa chups.",
+    "EXAMPLE": "Example",
+    "RESULT": "Result",
+    "LANGUAGE_FR": "French",
+    "LANGUAGE_EN": "English",
+    "MY_COMPONENTS_PAGE": {
+      "INTRO": {
+        "TITLE": "My components",
+        "TEXT1": "I have developped this website with the help of the VueJs 2.5 Library and SASS (indented version).",
+        "TEXT2": "You are currently on the page that helped me making tests. The order of the elements on the page does not follow any particular logic."
+      },
+      "COLORS": {
+        "TITLE": "Colors",
+        "DESCRIPTION": "Very monochrome colors with a catchy green one, chosen with love, meant to attract the visitors eye."
+      },
+      "FONTS": {
+        "TITLE": "Fonts",
+        "DESCRIPTION": "Free fonts, found on the web.",
+        "RALEWAY_DESC": "For titles",
+        "OPEN_SANS_DESC": "For the text",
+        "LEVI_RE_BRUSHED_DESC": "For fantasies"
+      },
+      "BUTTONS": {
+        "TITLE": "Buttons",
+        "DESCRIPTION": "Buttons, because sometimes it can be usefull.",
+        "BUTTON_TEXT": "Click me!",
+        "BUTTON_ALERT": "Ah, thanks. \nSee how usefull it can be ?"
+      },
+      "ICONS": {
+        "TITLE": "Icons",
+        "DESCRIPTION": "All colors, all sizes and, most important, all shapes!"
+      },
+      "GRID": {
+        "TITLE": "Grid",
+        "DESCRIPTION": "A very simple but powerfull grid using <b>flexbox</b> and written in 15 lines of SASS."
+      },
+      "LANGUAGE": {
+        "TITLE": "Language",
+        "DESCRIPTION": "Because there is no reason to speak to french people only, I wanted my website to be readable for everyone.",
+        "CURRENT_LANGUAGE": "The current language is : <b>#{currentLanguage}</b>"
+      }
+    }
   }
 }

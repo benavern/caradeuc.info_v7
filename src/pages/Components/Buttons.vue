@@ -1,10 +1,15 @@
 <template>
   <section id="buttons">
-    <h1>Boutons</h1>
+    <h1>
+      {{ $t('MY_COMPONENTS_PAGE.BUTTONS.TITLE') }}
+    </h1>
 
-    <p>Des boutons, pour cliquer dessus...</p>
+    <p>
+      {{ $t('MY_COMPONENTS_PAGE.BUTTONS.DESCRIPTION') }}
+    </p>
+
     <z-button @click.native="doSomething">
-      {{ $t('TEST') }}
+      {{ $t('MY_COMPONENTS_PAGE.BUTTONS.BUTTON_TEXT') }}
     </z-button>
 
     <hr>
@@ -12,7 +17,9 @@
     <div class="grid">
       <div class="item m-2">
         <div class="box">
-          <h5>Exemple</h5>
+          <h5>
+            {{ $t('EXAMPLE') }}
+          </h5>
 
 <pre v-pre>
 &lt;z-button @click.native="doSomething"&gt;
@@ -22,7 +29,9 @@
         </div>
       </div>
       <div class="item m-2">
-    <h5>Resultat</h5>
+    <h5>
+      {{ $t('RESULT') }}
+    </h5>
         <div class="box">
           <z-button @click.native="doSomething">
             button text
@@ -43,7 +52,7 @@ export default {
   },
   methods: {
     doSomething () {
-      alert(this.$t('TEST'))
+      alert(this.$t('MY_COMPONENTS_PAGE.BUTTONS.BUTTON_ALERT'))
     }
   }
 }

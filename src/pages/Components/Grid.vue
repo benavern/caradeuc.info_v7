@@ -1,108 +1,29 @@
 <template>
   <section id="grid">
-    <h1>Grille</h1>
+    <h1>
+      {{ $t('MY_COMPONENTS_PAGE.GRID.TITLE') }}
+    </h1>
 
-    <p>
-      Une grille très simple mais puissante qui exploite la propriété flexbox écrite en 15 lignes de sass
-    </p>
+    <p v-html="$t('MY_COMPONENTS_PAGE.GRID.DESCRIPTION')"></p>
 
     <div class="grid">
-      <div class="item xs-1"><div class="box demo-box">1</div></div>
-
-      <div class="item xs-2"><div class="box demo-box">2</div></div>
-      <div class="item xs-2"><div class="box demo-box">2</div></div>
-
-      <div class="item xs-3"><div class="box demo-box">3</div></div>
-      <div class="item xs-3"><div class="box demo-box">3</div></div>
-      <div class="item xs-3"><div class="box demo-box">3</div></div>
-
-      <div class="item xs-4"><div class="box demo-box">4</div></div>
-      <div class="item xs-4"><div class="box demo-box">4</div></div>
-      <div class="item xs-4"><div class="box demo-box">4</div></div>
-      <div class="item xs-4"><div class="box demo-box">4</div></div>
-
-      <div class="item xs-5"><div class="box demo-box">5</div></div>
-      <div class="item xs-5"><div class="box demo-box">5</div></div>
-      <div class="item xs-5"><div class="box demo-box">5</div></div>
-      <div class="item xs-5"><div class="box demo-box">5</div></div>
-      <div class="item xs-5"><div class="box demo-box">5</div></div>
-
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-      <div class="item xs-6"><div class="box demo-box">6</div></div>
-
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-      <div class="item xs-7"><div class="box demo-box">7</div></div>
-
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-      <div class="item xs-8"><div class="box demo-box">8</div></div>
-
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-      <div class="item xs-9"><div class="box demo-box">9</div></div>
-
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-      <div class="item xs-10"><div class="box demo-box">10</div></div>
-
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-      <div class="item xs-11"><div class="box demo-box">11</div></div>
-
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
-      <div class="item xs-12"><div class="box demo-box">12</div></div>
+      <div v-for="(val, index) in gridItems"
+           :key="index"
+           :class="`item xs-${val}`">
+        <div class="box demo-box">
+          {{ val }}
+        </div>
+      </div>
     </div>
 
     <hr>
+
     <div class="grid">
       <div class="item m-2">
         <div class="box">
-          <h5>Exemple</h5>
+          <h5>
+            {{ $t('EXAMPLE') }}
+          </h5>
 
 <pre v-pre>
 &lt;div class="grid"&gt;
@@ -130,7 +51,9 @@
       </div>
       <div class="item m-2">
         <div class="box">
-          <h5>Resultat</h5>
+          <h5>
+            {{ $t('RESULT') }}
+          </h5>
 
           <div class="grid">
             <div class="item">
@@ -158,6 +81,18 @@
 
 <script>
 export default {
-  name: 'ComponentsGrid'
+  name: 'ComponentsGrid',
+  data () {
+    let gridItems = []
+
+    for (let i = 1; i <= 12; i++) {
+      const items = Array(i).fill(i)
+      gridItems = [...gridItems, ...items]
+    }
+
+    return {
+      gridItems
+    }
+  }
 }
 </script>

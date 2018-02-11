@@ -1,8 +1,12 @@
 <template>
   <section id="fonts">
-    <h1>Polices de caractère</h1>
+    <h1>
+      {{ $t('MY_COMPONENTS_PAGE.FONTS.TITLE') }}
+    </h1>
 
-    <p>Des polices libres, chinées sur le web.</p>
+    <p>
+      {{ $t('MY_COMPONENTS_PAGE.FONTS.DESCRIPTION') }}
+    </p>
 
     <hr>
 
@@ -22,8 +26,8 @@
             {{ font.description }}
           </h6>
 
-          <p :class="['demo-box', font.class]">
-            Jelly beans halvah cake sweet roll fruitcake toffee candy canes. Chocolate cake croissant macaroon jelly pie jelly beans fruitcake bonbon cake. Jelly-o ice cream jelly pastry. Pie cheesecake biscuit pastry lollipop cheesecake brownie sweet.
+          <p :class="['demo-box', 'text-justify', font.class]">
+            {{ $t('LOREM') }}
           </p>
         </div>
       </div>
@@ -37,23 +41,24 @@
 export default {
   name: 'ComponentsFonts',
   data () {
+    const wording = this.$t('MY_COMPONENTS_PAGE.FONTS')
     return {
       fonts: [
         {
           name: 'Raleway',
-          description: 'Pour les titres',
+          description: wording.RALEWAY_DESC,
           class: 'font-title',
           link: 'https://fonts.google.com/specimen/Raleway'
         },
         {
           name: 'Open Sans',
-          description: 'Pour le texte',
+          description: wording.OPEN_SANS_DESC,
           class: 'font-text',
           link: 'https://fonts.google.com/specimen/Open+Sans'
         },
         {
           name: 'LeviReBrushed',
-          description: 'Pour les fantaisies',
+          description: wording.LEVI_RE_BRUSHED_DESC,
           class: 'font-fantasy',
           link: 'http://www.onlinewebfonts.com/download/737bf92a1c2df108cc14f74f8c8d3b6d'
         }

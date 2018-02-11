@@ -1,9 +1,11 @@
 <template>
   <section id="colors">
-    <h1>Couleurs</h1>
+    <h1>
+        {{ $t('MY_COMPONENTS_PAGE.COLORS.TITLE') }}
+    </h1>
 
     <p>
-      Des couleurs très monochrome avec une couleur verte, choisie avec amour, pour attirer l'oeil des passants.
+      {{ $t('MY_COMPONENTS_PAGE.COLORS.DESCRIPTION') }}
     </p>
 
     <hr>
