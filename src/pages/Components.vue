@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="intro">
+    <section class="container"  id="intro">
       <h1>
         {{ $t('MY_COMPONENTS_PAGE.INTRO.TITLE') }}
       </h1>
@@ -54,7 +54,6 @@ export default {
 <style lang="sass" scoped>
   section
     border-bottom: 1px solid $gray-light
-    padding: 1.5rem 2rem
 
     &:first-child
       border-top: 1px solid $gray-light

@@ -1,5 +1,5 @@
 <template>
-  <section id="buttons">
+  <section class="container"  id="buttons">
     <h1>
       {{ $t('MY_COMPONENTS_PAGE.BUTTONS.TITLE') }}
     </h1>
@@ -28,14 +28,17 @@
 </pre>
         </div>
       </div>
+
       <div class="item m-2">
-    <h5>
-      {{ $t('RESULT') }}
-    </h5>
         <div class="box">
-          <z-button @click.native="doSomething">
-            button text
-          </z-button>
+          <h5>
+            {{ $t('RESULT') }}
+          </h5>
+          <div class="box">
+            <z-button @click.native="doSomething">
+              button text
+            </z-button>
+          </div>
         </div>
       </div>
     </div>

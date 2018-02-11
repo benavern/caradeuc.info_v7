@@ -1,5 +1,5 @@
 <template>
-  <section id="grid">
+  <section class="container"  id="grid">
     <h1>
       {{ $t('MY_COMPONENTS_PAGE.GRID.TITLE') }}
     </h1>

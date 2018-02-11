@@ -92,21 +92,30 @@ export default {
 
 <style lang="sass">
   #content
-    margin-left: $menu-width
+    margin-left: $menu-width-desktop
+
+    @media (max-width: $medium)
+      margin-left: 0
+      margin-top: 5rem
 </style>
 
 <style lang="sass" scoped>
-
   header
     position: fixed
     left: 0
     top: 0
     height: 100vh
-    width: $menu-width
+    width: $menu-width-desktop
     background-color: $white
     border-right: 1px solid $gray-light
     box-shadow: 0 0 .5rem $gray-light
     z-index: 999
+
+    @media (max-width: $medium)
+      height: $menu-height-mobile
+      width: 100%
+      border-right: none
+      border-bottom: 1px solid $gray-light
 
     .header-content
       height: 100%
@@ -116,21 +125,31 @@ export default {
       justify-content: space-between
       text-align: center
 
+      @media (max-width: $medium)
+        flex-direction: row
+
       .logo
         a
           color: $black
           h1
             font-weight: normal
+            margin: 0
+            line-height: $menu-height-mobile
+            padding: .5rem 1rem
 
       .menu-switcher
         font-size: 2rem
-        padding: 1rem 0
+        padding: 1rem
         cursor: pointer
 
         &:hover
           color: $primary
 
       .social-links
+
+        @media (max-width: $medium)
+          display: none
+
         ul
           list-style: none
           padding: 1rem 0
@@ -143,10 +162,16 @@ export default {
     .menu
       position: absolute
       top: 0
-      left: $menu-width
-      width: calc(100vw - #{$menu-width})
+      left: $menu-width-desktop
+      width: calc(100vw - #{$menu-width-desktop})
       height: 100%
       background: rgba($black, .3)
+
+      @media (max-width: $medium)
+        width: 100%
+        left: 0
+        top: $menu-height-mobile
+        height: calc(100vh - #{$menu-height-mobile})
 
       ul
         height: 100%

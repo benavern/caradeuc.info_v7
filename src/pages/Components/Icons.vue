@@ -1,5 +1,5 @@
 <template>
-  <section id="icons">
+  <section class="container"  id="icons">
       <h1>
         {{ $t('MY_COMPONENTS_PAGE.ICONS.TITLE')}}
       </h1>

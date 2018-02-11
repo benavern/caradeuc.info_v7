@@ -1,5 +1,5 @@
 <template>
-  <section id="fonts">
+  <section class="container"  id="fonts">
     <h1>
       {{ $t('MY_COMPONENTS_PAGE.FONTS.TITLE') }}
     </h1>
@@ -67,11 +67,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass" scoped>
-  #fonts
-    .demo-box
-      overflow: auto
-      max-height: 15rem
-
-</style>

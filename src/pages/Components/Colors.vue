@@ -1,5 +1,5 @@
 <template>
-  <section id="colors">
+  <section class="container" id="colors">
     <h1>
         {{ $t('MY_COMPONENTS_PAGE.COLORS.TITLE') }}
     </h1>
