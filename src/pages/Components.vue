@@ -61,9 +61,31 @@ export default {
 
     /deep/
       pre
+        position: relative
         font-size: .8rem
         font-family: monospace
+        overflow-y: hidden
         overflow-x: auto
+        border: 1px solid $black
+        border-radius: .3rem
+        box-shadow: 0 0 .5rem rgba($black, .5)
+        padding-top: 3rem
+
+        &:before
+          content: attr(data-file)
+          display: block
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          height: 2rem
+          line-height: 2rem
+          background-color: $gray-light
+          background-image: linear-gradient(to top, darken($gray-light, 15%), $gray-light)
+          border-bottom: 1px solid $black
+          color: $gray-dark
+          text-align: center
+          font-weight: bold
 
       .demo-box
         background-color: $gray-lighter

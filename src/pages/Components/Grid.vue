@@ -25,7 +25,7 @@
             {{ $t('EXAMPLE') }}
           </h5>
 
-<pre v-pre>
+<pre data-file="grid.vue" v-pre>
 &lt;div class="grid"&gt;
 
   &lt;div class="item"&gt;

@@ -28,7 +28,7 @@
               {{ $t('EXAMPLE') }}
             </h5>
 
-<pre v-pre>
+<pre data-file="icone.vue" v-pre>
 &lt;z-icon name="twitter" color="#abc"/&gt;
 </pre>
           </div>

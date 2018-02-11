@@ -21,7 +21,7 @@
             {{ $t('EXAMPLE') }}
           </h5>
 
-<pre v-pre>
+<pre data-file="button.vue" v-pre>
 &lt;z-button @click.native="doSomething"&gt;
   button text
 &lt;/z-button&gt;
