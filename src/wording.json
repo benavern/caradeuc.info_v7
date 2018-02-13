@@ -6,6 +6,15 @@
     "RESULT": "Resultat",
     "LANGUAGE_FR": "Français",
     "LANGUAGE_EN": "Anglais",
+
+    "HOME": {
+      "HEROZONE": {
+        "GREATING": "SALUT! <br> JE SUIS BENJAMIN.",
+        "SUBTITLE": "INGÉNIEUR WEB & DÉVELOPPEUR WEB, BASÉ À RENNES",
+        "CALL_TO_ACTION": "VOIR MON LABO"
+      }
+    },
+
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "Mes composants",
@@ -51,6 +60,15 @@
     "RESULT": "Result",
     "LANGUAGE_FR": "French",
     "LANGUAGE_EN": "English",
+
+    "HOME": {
+      "HEROZONE": {
+        "GREATING": "HELLO! <br> I AM BENJAMIN.",
+        "SUBTITLE": "ENGINEER & WEB DEVELOPPER, BASED IN RENNES (FRANCE)",
+        "CALL_TO_ACTION": "CHECK OUT MY LAB"
+      }
+    },
+
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "My components",

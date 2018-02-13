@@ -1,13 +1,17 @@
 <template>
-  <section class="container">
-    <h1 class="font-fantasy">
+  <div id="home">
+    <herozone />
+
+    <div class="container">
       {{ $t('HELLO_WORLD') }}
-    </h1>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script>
+import Herozone from './Home/Herozone'
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { Herozone }
 }
 </script>
