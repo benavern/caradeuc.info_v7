@@ -39,10 +39,10 @@
               :key="index">
             <router-link :to="route.path">
               <h2 class="font-fantasy">
-                {{ route.meta.displayName }}
+                {{ $t(route.meta.displayName) }}
               </h2>
               <h6>
-                {{ route.meta.description }}
+                {{ $t(route.meta.description) }}
               </h6>
             </router-link>
           </li>
@@ -92,11 +92,11 @@ export default {
 
 <style lang="sass">
   #content
-    margin-left: $menu-width-desktop
+    margin-top: $menu-height-mobile
 
-    @media (max-width: $medium)
-      margin-left: 0
-      margin-top: 5rem
+    @media (min-width: $medium)
+      margin-top: 0
+      margin-left: $menu-width-desktop
 </style>
 
 <style lang="sass" scoped>
@@ -104,51 +104,57 @@ export default {
     position: fixed
     left: 0
     top: 0
-    height: 100vh
-    width: $menu-width-desktop
-    background-color: $white
-    border-right: 1px solid $gray-light
+    height: $menu-height-mobile
+    width: 100%
+    border-bottom: 1px solid $gray-light
     box-shadow: 0 0 .5rem $gray-light
     z-index: 999
 
-    @media (max-width: $medium)
-      height: $menu-height-mobile
-      width: 100%
-      border-right: none
-      border-bottom: 1px solid $gray-light
+    @media (min-width: $medium)
+      height: 100vh
+      width: $menu-width-desktop
+      background-color: $white
+      border-bottom: none
+      border-right: 1px solid $gray-light
 
     .header-content
       height: 100%
       width: 100%
       display: flex
-      flex-direction: column
+      flex-direction: row
       justify-content: space-between
       text-align: center
+      line-height: 1
 
-      @media (max-width: $medium)
-        flex-direction: row
+      @media (min-width: $medium)
+        flex-direction: column
 
       .logo
         a
           color: $black
           h1
-            font-weight: normal
-            margin: 0
             line-height: $menu-height-mobile
+            height: $menu-height-mobile
             padding: .5rem 1rem
+            margin: 0
+
+            @media (min-width: $medium)
+             margin: 1.5rem 0
 
       .menu-switcher
         font-size: 2rem
-        padding: 1rem
+        padding: 0 1rem
         cursor: pointer
+        padding: 1rem
 
         &:hover
           color: $primary
 
       .social-links
+        display: none
 
-        @media (max-width: $medium)
-          display: none
+        @media (min-width: $medium)
+          display: block
 
         ul
           list-style: none
@@ -161,17 +167,17 @@ export default {
 
     .menu
       position: absolute
-      top: 0
-      left: $menu-width-desktop
-      width: calc(100vw - #{$menu-width-desktop})
-      height: 100%
+      width: 100%
+      top: $menu-height-mobile
+      left: 0
+      height: calc(100vh - #{$menu-height-mobile})
       background: rgba($black, .3)
 
-      @media (max-width: $medium)
-        width: 100%
-        left: 0
-        top: $menu-height-mobile
-        height: calc(100vh - #{$menu-height-mobile})
+      @media (min-width: $medium)
+        width: calc(100vw - #{$menu-width-desktop})
+        top: 0
+        left: $menu-width-desktop
+        height: 100%
 
       ul
         height: 100%

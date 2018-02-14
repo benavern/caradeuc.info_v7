@@ -16,8 +16,8 @@ export default new Router({
       name: 'Home',
       component: Home,
       meta: {
-        displayName: 'Accueil',
-        description: 'Un peu de tout...'
+        displayName: 'MENU.HOME.NAME',
+        description: 'MENU.HOME.DESCRIPTION'
       }
     },
 
@@ -27,8 +27,8 @@ export default new Router({
       name: 'Components',
       component: Components,
       meta: {
-        displayName: 'Mes composants',
-        description: 'Pour construire ce site.'
+        displayName: 'MENU.MY_COMPONENTS.NAME',
+        description: 'MENU.MY_COMPONENTS.DESCRIPTION'
       }
     }
   ]

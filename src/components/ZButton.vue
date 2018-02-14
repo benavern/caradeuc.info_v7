@@ -19,13 +19,15 @@ button
   color: $white
   padding: 0 1.5em
   border: none
-  border-radius: 2.5em
   outline: none
   box-shadow: 0 0 .8em rgba($black, .5)
-  transition: box-shadow .3s
+  font-size: inherit
+  text-variante: small-caps
+  transition: all .3s
 
   &:hover
     box-shadow: 0 0 .8em rgba($black, .8)
     cursor: pointer
+    background-color: $black
 
 </style>
