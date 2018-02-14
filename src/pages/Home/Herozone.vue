@@ -42,37 +42,54 @@ export default {
 
   #herozone
     position: relative
-    height: 100vh
     background-color: $black
     overflow: hidden
 
     .herozone-background
       position: absolute
-      top: -$blur
-      left: -$blur
-      right: -$blur
-      bottom: -$blur
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: -$blur
       background:
         image: url('../../assets/bg.jpg')
         position: center center
         size: cover
         attachment: fixed
       filter: blur($blur)
-      opacity:
 
     .herozone-content
-      position: absolute
-      top: 50%
-      left: 50%
-      width: 90%
-      transform: translate(-50%, -50%)
+      position: relative
       text-shadow: 0 0 1rem $black
+      padding: 0 1rem
 
       h1
-        font-size: 5rem
+        text-shadow: 0 0 1rem $black
 
       .call-to-action
-        padding: 5rem 0
-        font-size: 3rem // for the button size?
+        margin: 3em 0
 
+  @media (min-width: $medium)
+    #herozone
+      height: 768px // for compatibility
+      height: calc(100vh - #{$menu-height-mobile})
+
+      .herozone-content
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 90%
+        transform: translate(-50%, -50%)
+
+        h1
+          font-size: 5rem
+          line-height: 1
+
+        .call-to-action
+          font-size: 1.2rem // for the button size?
+
+  @media (min-width: $large)
+    #herozone
+      height: 100vh
 </style>

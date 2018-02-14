@@ -7,11 +7,22 @@
     "LANGUAGE_FR": "Français",
     "LANGUAGE_EN": "Anglais",
 
+    "MENU": {
+      "HOME": {
+        "NAME": "Accueil",
+        "DESCRIPTION": "Un peu de tout ..."
+      },
+      "MY_COMPONENTS": {
+        "NAME": "Terrain de jeu",
+        "DESCRIPTION": "Pour construire ce site"
+      }
+    },
+
     "HOME": {
       "HEROZONE": {
         "GREATING": "SALUT! <br> JE SUIS BENJAMIN.",
         "SUBTITLE": "INGÉNIEUR WEB & DÉVELOPPEUR WEB, BASÉ À RENNES",
-        "CALL_TO_ACTION": "VOIR MON LABO"
+        "CALL_TO_ACTION": "Voir mon labo"
       }
     },
 
@@ -65,7 +76,7 @@
       "HEROZONE": {
         "GREATING": "HELLO! <br> I AM BENJAMIN.",
         "SUBTITLE": "ENGINEER & WEB DEVELOPPER, BASED IN RENNES (FRANCE)",
-        "CALL_TO_ACTION": "CHECK OUT MY LAB"
+        "CALL_TO_ACTION": "Check out my lab"
       }
     },
 
