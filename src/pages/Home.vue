@@ -2,6 +2,8 @@
   <div id="home">
     <herozone />
 
+    <div id="bottom"></div>
+
     <div class="container">
       {{ $t('HELLO_WORLD') }}
     </div>

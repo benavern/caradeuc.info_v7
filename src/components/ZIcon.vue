@@ -72,6 +72,15 @@
       </g>
     </svg>
 
+    <svg v-if="name === 'bottom'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="967.094 967.844 105.312 74.312"
+         width="1em"
+         height="1em">
+      <g id="scroll down">
+        <line :stroke="color" x1="989.25" y1="990" x2="1019.25" y2="1020" vector-effect="non-scaling-stroke" stroke-width="3.051" stroke-linecap="square" stroke-miterlimit="3"/>
+        <line :stroke="color" x1="1050.25" y1="990" x2="1020.25" y2="1020" vector-effect="non-scaling-stroke" stroke-width="3.051" stroke-linecap="square" stroke-miterlimit="3"/>
+      </g>
+    </svg>
+
   </span>
 </template>
 
