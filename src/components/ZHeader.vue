@@ -1,7 +1,8 @@
 <template>
   <header>
     <div class="header-content">
-      <div class="logo">
+      <div class="logo"
+           @click="hideMenu">
         <router-link to="/">
           <h1 class="font-fantasy">BC</h1>
         </router-link>
@@ -125,6 +126,7 @@ export default {
       justify-content: space-between
       text-align: center
       line-height: 1
+      background-color: $white
 
       @media (min-width: $medium)
         flex-direction: column
