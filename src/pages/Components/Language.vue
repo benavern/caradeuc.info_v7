@@ -1,5 +1,5 @@
 <template>
-  <section class="container"  id="wording">
+  <section class="container" id="language">
     <h1>
       {{ $t('MY_COMPONENTS_PAGE.LANGUAGE.TITLE') }}
     </h1>

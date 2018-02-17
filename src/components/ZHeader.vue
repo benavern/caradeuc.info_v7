@@ -125,7 +125,7 @@ export default {
       line-height: 1
       background-color: $white
       border-bottom: 1px solid $gray-light
-      box-shadow: 0 0 .5rem $gray-light
+      box-shadow: 0 0 .5rem rgba($black, .2)
       z-index: 1
 
       @media (min-width: $medium)

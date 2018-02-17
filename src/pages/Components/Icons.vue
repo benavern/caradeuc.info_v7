@@ -56,7 +56,7 @@ export default {
   },
   data () {
     return {
-      icons: ['github', 'linkedin', 'twitter', 'menu-open', 'menu-close', 'uk-flag', 'fr-flag']
+      icons: ['github', 'linkedin', 'twitter', 'menu-open', 'menu-close', 'bottom', 'uk-flag', 'fr-flag']
     }
   }
 }
