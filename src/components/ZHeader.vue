@@ -1,7 +1,8 @@
 <template>
   <header>
     <div class="header-content">
-      <div class="logo">
+      <div class="logo"
+           @click="hideMenu">
         <router-link to="/">
           <h1 class="font-fantasy">BC</h1>
         </router-link>
@@ -106,18 +107,15 @@ export default {
     top: 0
     height: $menu-height-mobile
     width: 100%
-    border-bottom: 1px solid $gray-light
-    box-shadow: 0 0 .5rem $gray-light
     z-index: 999
 
     @media (min-width: $medium)
       height: 100vh
       width: $menu-width-desktop
       background-color: $white
-      border-bottom: none
-      border-right: 1px solid $gray-light
 
     .header-content
+      position: relative
       height: 100%
       width: 100%
       display: flex
@@ -125,9 +123,15 @@ export default {
       justify-content: space-between
       text-align: center
       line-height: 1
+      background-color: $white
+      border-bottom: 1px solid $gray-light
+      box-shadow: 0 0 .5rem $gray-light
+      z-index: 1
 
       @media (min-width: $medium)
         flex-direction: column
+        border-bottom: none
+        border-right: 1px solid $gray-light
 
       .logo
         a

@@ -72,6 +72,17 @@
     "LANGUAGE_FR": "French",
     "LANGUAGE_EN": "English",
 
+    "MENU": {
+      "HOME": {
+        "NAME": "Home",
+        "DESCRIPTION": "A bit of everything ..."
+      },
+      "MY_COMPONENTS": {
+        "NAME": "Playground",
+        "DESCRIPTION": "For building this website"
+      }
+    },
+
     "HOME": {
       "HEROZONE": {
         "GREATING": "HELLO! <br> I AM BENJAMIN.",
