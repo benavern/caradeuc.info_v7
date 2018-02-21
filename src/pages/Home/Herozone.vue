@@ -32,7 +32,7 @@ import ZIcon from '@/components/ZIcon'
 import ZButton from '@/components/ZButton'
 import smoothScroll from '@/utils/smooth-scroll'
 export default {
-  name: 'Herozone',
+  name: 'HomeHerozone',
   components: {
     ZIcon,
     ZButton

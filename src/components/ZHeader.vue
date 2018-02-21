@@ -277,7 +277,6 @@ export default {
                   filter: drop-shadow(0 0 1rem $black)
                   transform: scale(1.2)
 
-
       ////// transition settings //////
       &.menu-enter-active,
       &.menu-leave-active

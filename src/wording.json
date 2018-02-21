@@ -24,6 +24,11 @@
         "GREATING": "SALUT! <br> JE SUIS BENJAMIN.",
         "SUBTITLE": "INGÉNIEUR WEB & DÉVELOPPEUR WEB, BASÉ À RENNES",
         "CALL_TO_ACTION": "Voir mon labo"
+      },
+      "INTRO": {
+        "TITLE": "<span class=\"color-green\">DÉVELOPPEMENT</span> WEB<br><span class=\"line-through\">UN TRAVAIL</span> <span class=\"color-green\">UNE PASSION</span>",
+        "TEXT1": "Je suis un développeur front-end de 27 ans, avec plus de 2 ans et demi d'expérience en entreprise. Je travaille aujourd'hui comme prestataire pour un service de télévision sur le web.",
+        "TEXT2": "Je ne suis pas en recherche active d'oportunités mais reste à l'écoute de propositions qui changeraient la donne..."
       }
     },
 
@@ -90,6 +95,11 @@
         "GREATING": "HELLO! <br> I AM BENJAMIN.",
         "SUBTITLE": "ENGINEER & WEB DEVELOPPER, BASED IN RENNES (FRANCE)",
         "CALL_TO_ACTION": "Check out my lab"
+      },
+      "INTRO": {
+        "TITLE": "WEB <span class=\"color-green\">DEVELOPMENT</span><br><span class=\"line-through\">A JOB</span> <span class=\"color-green\">A PASSION</span>",
+        "TEXT1": "I am a 27 years old front-end developer, with over 2 and a half years of experience in companies. Today I work as a contractor for a french web-television provider.",
+        "TEXT2": "For now, I am not actively looking for a job but remain attentive to those who will have very convincing proposals."
       }
     },
 

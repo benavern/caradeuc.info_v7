@@ -1,19 +1,21 @@
 <template>
   <div id="home">
-    <herozone />
-
+    <home-herozone />
     <div id="bottom"></div>
 
-    <div class="container">
-      {{ $t('HELLO_WORLD') }}
-    </div>
+    <home-intro />
+
   </div>
 </template>
 
 <script>
-import Herozone from './Home/Herozone'
+import HomeHerozone from './Home/Herozone'
+import HomeIntro from './Home/Intro'
 export default {
   name: 'Home',
-  components: { Herozone }
+  components: {
+    HomeHerozone,
+    HomeIntro
+  }
 }
 </script>
