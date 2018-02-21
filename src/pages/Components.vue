@@ -84,11 +84,6 @@ export default {
 
 <style lang="sass" scoped>
   section
-    border-bottom: 1px solid $gray-light
-
-    &:first-child
-      border-top: 1px solid $gray-light
-
     /deep/
       pre
         position: relative
