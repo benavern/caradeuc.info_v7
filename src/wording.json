@@ -4,6 +4,7 @@
     "LOREM": "Cupcake ipsum dolor sit amet. Cheesecake ice cream halvah gummi bears icing. Macaroon gingerbread jelly-o cheesecake tiramisu marzipan cheesecake topping. Liquorice cotton candy cake cookie chupa chups.",
     "EXAMPLE": "Exemple",
     "RESULT": "Resultat",
+    "LANGUAGE": "Langue",
     "LANGUAGE_FR": "Français",
     "LANGUAGE_EN": "Anglais",
 
@@ -58,9 +59,9 @@
         "DESCRIPTION": "Une grille très simple mais puissante qui exploite la propriété <b>flexbox</b> écrite en <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">30 lignes de SASS.</a>"
       },
       "LANGUAGE": {
-        "TITLE": "Langage",
+        "TITLE": "Langue",
         "DESCRIPTION": "Parcequ'il n'y a aucune raison pour que je ne parle qu'aux français, je voulais que mon site soit lisible par tout le monde",
-        "CURRENT_LANGUAGE": "Le langage sélectionné est : <b>#{currentLanguage}</b>"
+        "CURRENT_LANGUAGE": "La langue sélectionnée est : <b>#{currentLanguage}</b>"
       }
     }
   },
@@ -69,6 +70,7 @@
     "LOREM": "Cupcake ipsum dolor sit amet. Cheesecake ice cream halvah gummi bears icing. Macaroon gingerbread jelly-o cheesecake tiramisu marzipan cheesecake topping. Liquorice cotton candy cake cookie chupa chups.",
     "EXAMPLE": "Example",
     "RESULT": "Result",
+    "LANGUAGE": "Language",
     "LANGUAGE_FR": "French",
     "LANGUAGE_EN": "English",
 

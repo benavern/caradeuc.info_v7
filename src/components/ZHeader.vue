@@ -47,6 +47,31 @@
               </h6>
             </router-link>
           </li>
+          <li @click.stop>
+            <div class="menu-item-content">
+              <h2 class="font-fantasy">
+                {{ $t('LANGUAGE') }}
+              </h2>
+
+              <div class="grid choose-lang">
+                <div class="item xs-2">
+                  <div :class="['box', {selected: currentLang === 'en'}]"
+                       :title="$t('LANGUAGE_EN')"
+                       @click="changeLang('en')">
+                    <z-icon name="uk-flag" />
+                  </div>
+                </div>
+
+                <div class="item xs-2">
+                  <div :class="['box', {selected: currentLang === 'fr'}]"
+                       :title="$t('LANGUAGE_FR')"
+                       @click="changeLang('fr')">
+                    <z-icon name="fr-flag" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </transition>
@@ -55,6 +80,7 @@
 
 <script>
 import ZIcon from '@/components/ZIcon'
+import { getCountryByStorage, setCountryToStorage } from '@/country'
 
 export default {
   name: 'ZHeader',
@@ -77,16 +103,33 @@ export default {
           icon: 'linkedin',
           link: 'https://www.linkedin.com/in/benjamincaradeuc'
         }
-      ]
+      ],
+      currentLang: null
     }
   },
   methods: {
     toggleMenu () {
-      this.menuVisible = !this.menuVisible
+      this.menuVisible ? this.hideMenu() : this.showMenu()
+    },
+    showMenu () {
+      document.body.style.overflow = 'hidden'
+      this.menuVisible = true
     },
     hideMenu () {
+      document.body.style.overflow = 'auto'
       this.menuVisible = false
+    },
+    changeLang (lang) {
+      if (this.currentLang === lang) {
+        this.hideMenu()
+      } else {
+        setCountryToStorage(lang)
+        location.reload()
+      }
     }
+  },
+  mounted () {
+    this.currentLang = getCountryByStorage()
   }
 }
 </script>
@@ -176,6 +219,7 @@ export default {
       left: 0
       height: calc(100vh - #{$menu-height-mobile})
       background: rgba($black, .3)
+      overflow: auto
 
       @media (min-width: $medium)
         width: calc(100vw - #{$menu-width-desktop})
@@ -184,7 +228,7 @@ export default {
         height: 100%
 
       ul
-        height: 100%
+        min-height: 100%
         list-style: none
         display: flex
         flex-direction: column
@@ -200,7 +244,8 @@ export default {
           &:first-child
             border-top: none
 
-          a
+          a,
+          .menu-item-content
             padding: 1rem
             flex: 1
             display: flex
@@ -219,6 +264,19 @@ export default {
 
               h2, h6
                 color: $primary
+
+            .choose-lang
+              font-size: 4rem
+              line-height: .8
+
+              .box
+                cursor: pointer
+                filter: drop-shadow(0 0 .5rem rgba($black, .3))
+
+                &.selected
+                  filter: drop-shadow(0 0 1rem $black)
+                  transform: scale(1.2)
+
 
       ////// transition settings //////
       &.menu-enter-active,
