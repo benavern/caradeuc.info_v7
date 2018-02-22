@@ -1,7 +1,7 @@
 <template>
   <section id="intro" class="container">
       <div class="grid">
-        <div class="item m-2">
+        <div class="grid-item m-2-3">
           <div class="box">
             <h2 v-html="$t('HOME.INTRO.TITLE')"></h2>
 
@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <div class="item m-2">
+        <div class="grid-item m-3">
           <div class="box code-img-wrapper">
             <img src="../../assets/code.png" alt="Code icone">
           </div>

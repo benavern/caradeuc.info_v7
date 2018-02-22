@@ -54,7 +54,7 @@
               </h2>
 
               <div class="grid choose-lang">
-                <div class="item xs-2">
+                <div class="grid-item xs-2">
                   <div :class="['box', {selected: currentLang === 'en'}]"
                        :title="$t('LANGUAGE_EN')"
                        @click="changeLang('en')">
@@ -62,7 +62,7 @@
                   </div>
                 </div>
 
-                <div class="item xs-2">
+                <div class="grid-item xs-2">
                   <div :class="['box', {selected: currentLang === 'fr'}]"
                        :title="$t('LANGUAGE_FR')"
                        @click="changeLang('fr')">

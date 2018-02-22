@@ -12,7 +12,7 @@
     <p v-html="$t('MY_COMPONENTS_PAGE.LANGUAGE.CURRENT_LANGUAGE', { currentLanguage })">Chargement ...</p>
 
     <div class="grid">
-      <div class="item xs-2">
+      <div class="grid-item xs-2">
         <div class="box text-center">
           <z-icon name="fr-flag"
                   @click.native="setCountry('fr')"
@@ -20,7 +20,7 @@
                   :title="$t('LANGUAGE_FR')" />
         </div>
       </div>
-      <div class="item xs-2">
+      <div class="grid-item xs-2">
         <div class="box text-center">
           <z-icon name="uk-flag"
                   @click.native="setCountry('en')"

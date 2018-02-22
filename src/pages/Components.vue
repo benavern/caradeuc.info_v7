@@ -88,7 +88,6 @@ export default {
       pre
         position: relative
         font-size: .8rem
-        font-family: monospace
         overflow-y: hidden
         overflow-x: auto
         border: 1px solid $black
