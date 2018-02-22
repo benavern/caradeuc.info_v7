@@ -35,7 +35,7 @@
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "Mes composants",
-        "TEXT1": "J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de SASS (version indentée).",
+        "TEXT1": "J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de SASS (version indentée). Mon code est disponible <a href=\"#{url}\">sur github</a>. C'est la 7ème version que je développe depuis que j'ai commencé le développement web.",
         "TEXT2": "Vous vous trouvez actuellement sur la page qui m'a permit de faire des tests. L'ordre des éléments de la page ne suit pas de logique particulière."
       },
       "COLORS": {
@@ -116,7 +116,7 @@
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "My components",
-        "TEXT1": "I have developped this website with the help of the VueJs 2.5 Library and SASS (indented version).",
+        "TEXT1": "I have developped this website with the help of the VueJs 2.5 Library and SASS (indented version). My code is available <a href=\"#{url}\">on github</a>. This is the 7th version I've developed since I began learning web development.",
         "TEXT2": "You are currently on the page that helped me making tests. The order of the elements on the page does not follow any particular logic."
       },
       "COLORS": {

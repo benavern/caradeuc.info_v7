@@ -5,9 +5,7 @@
         {{ $t('MY_COMPONENTS_PAGE.INTRO.TITLE') }}
       </h1>
 
-      <p>
-        {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT1') }}
-      </p>
+      <p v-html="$t('MY_COMPONENTS_PAGE.INTRO.TEXT1', { url: 'https://github.com/benavern/caradeuc.info_v7' })"></p>
 
       <p>
         {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT2') }}
