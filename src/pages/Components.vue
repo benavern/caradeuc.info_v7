@@ -5,9 +5,7 @@
         {{ $t('MY_COMPONENTS_PAGE.INTRO.TITLE') }}
       </h1>
 
-      <p>
-        {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT1') }}
-      </p>
+      <p v-html="$t('MY_COMPONENTS_PAGE.INTRO.TEXT1', { url: 'https://github.com/benavern/caradeuc.info_v7' })"></p>
 
       <p>
         {{ $t('MY_COMPONENTS_PAGE.INTRO.TEXT2') }}
@@ -88,7 +86,6 @@ export default {
       pre
         position: relative
         font-size: .8rem
-        font-family: monospace
         overflow-y: hidden
         overflow-x: auto
         border: 1px solid $black

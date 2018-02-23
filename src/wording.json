@@ -35,7 +35,7 @@
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "Mes composants",
-        "TEXT1": "J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de SASS (version indentée).",
+        "TEXT1": "J'ai développé ce site à l'aide de la librairie VueJs 2.5 et de SASS (version indentée). Mon code est disponible <a href=\"#{url}\">sur github</a>. C'est la 7ème version que je développe depuis que j'ai commencé le développement web.",
         "TEXT2": "Vous vous trouvez actuellement sur la page qui m'a permit de faire des tests. L'ordre des éléments de la page ne suit pas de logique particulière."
       },
       "COLORS": {
@@ -61,11 +61,21 @@
       },
       "GRID": {
         "TITLE": "Grille",
-        "DESCRIPTION": "Une grille très simple mais puissante qui exploite la propriété <b>flexbox</b> écrite en <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">30 lignes de SASS.</a>"
+        "DESCRIPTION": "Une grille très simple mais puissante basée sur 12 colonnes qui exploite la propriété <b>flexbox</b> écrite en <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">40 lignes de SASS.</a>",
+        "SIMPLE_SUBTITLE": "Mode simple",
+        "SIMPLE_DESCRIPTION": "Pour utiliser le mode simple, il suffit de calculer le nombre d'éléments de la même taille vous pourriez placer sur une ligne. Par exemple, pour un élément qui ferait 50% de la largeur de la grille sur un écran moyen, on pourrait en mettre 2, la classe à utiliser serait donc :",
+        "SIMPLE_EXAMPLE": ".m-2",
+        "ADVANCED_SUBTITLE": "Mode avancé",
+        "ADVANCED_DESCRIPTION": "Pour utiliser le mode avancé, on combine le nombre de colonnes à utiliser, au nombre de colonnes qu'on imagine pour la ligne. Par exemple pour un élément qui ferait 2/3 de la largeur de la grille sur un écran très large, on utilisera la classe :",
+        "ADVANCED_EXAMPLE": ".m-2-3",
+        "PUSH_SUBTITLE": "Espaces forcés",
+        "PUSH_DESCRIPTION": "Pour forcer un élément à être placé plus loin sans ajouter d'élément à sa gauche, on peut utiliser la classe \"push\" de la même manière que pour les 2 points précédents :",
+        "PUSH_EXAMPLE1": ".push-m-2",
+        "PUSH_EXAMPLE2": ".push-xl-2-3"
       },
       "LANGUAGE": {
         "TITLE": "Langue",
-        "DESCRIPTION": "Parcequ'il n'y a aucune raison pour que je ne parle qu'aux français, je voulais que mon site soit lisible par tout le monde",
+        "DESCRIPTION": "Parcequ'il n'y a aucune raison pour que je ne parle qu'aux français, je voulais que mon site soit lisible par tout le monde.",
         "CURRENT_LANGUAGE": "La langue sélectionnée est : <b>#{currentLanguage}</b>"
       }
     }
@@ -106,7 +116,7 @@
     "MY_COMPONENTS_PAGE": {
       "INTRO": {
         "TITLE": "My components",
-        "TEXT1": "I have developped this website with the help of the VueJs 2.5 Library and SASS (indented version).",
+        "TEXT1": "I have developped this website with the help of the VueJs 2.5 Library and SASS (indented version). My code is available <a href=\"#{url}\">on github</a>. This is the 7th version I've developed since I began learning web development.",
         "TEXT2": "You are currently on the page that helped me making tests. The order of the elements on the page does not follow any particular logic."
       },
       "COLORS": {
@@ -132,7 +142,17 @@
       },
       "GRID": {
         "TITLE": "Grid",
-        "DESCRIPTION": "A very simple but powerfull grid using <b>flexbox</b> and written in <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">30 lines of SASS.</a>"
+        "DESCRIPTION": "A very simple but powerfull grid using <b>flexbox</b> and written in <a href=\"https://github.com/benavern/caradeuc.info_v7/blob/master/src/styles/_grid.sass\">40 lines of SASS.</a>",
+        "SIMPLE_SUBTITLE": "Simple mode",
+        "SIMPLE_DESCRIPTION": "For simple mode, you'll just have to calculate how many same width elements you could place on one line. For example, for an element which will be 50% of the width of the grid on a medium screen, we could put 2 on one line, the class you will use is :",
+        "SIMPLE_EXAMPLE": ".m-2",
+        "ADVANCED_SUBTITLE": "Advanced mode",
+        "ADVANCED_DESCRIPTION": "For advanced mode, we combine the number of columns to be used with the number of columns we want on this line. For example, for an element which width is 2/3 of the grid on a very large screen, we will use the class :",
+        "ADVANCED_EXAMPLE": ".m-2-3",
+        "PUSH_SUBTITLE": "Forced spaces",
+        "PUSH_DESCRIPTION": "If you want to push an element so that it is not sticked to the one on its left side, we can use the \"push\" class the same way as the two before :",
+        "PUSH_EXAMPLE1": ".push-m-2",
+        "PUSH_EXAMPLE2": ".push-xl-2-3"
       },
       "LANGUAGE": {
         "TITLE": "Language",

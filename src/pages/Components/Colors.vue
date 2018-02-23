@@ -13,7 +13,7 @@
     <div class="grid">
       <div v-for="(color, index) in colors"
             :key="index"
-            class="item xs-2 m-3 l-4 xl-5 xxl-6">
+            class="grid-item xs-2 m-3 l-4 xl-5 xxl-6">
         <div class="box">
           <div :class="['color-demo', `bg-${color.name}`]">
             <div :class="['color-demo-hex', `color-${color.display}`, 'font-bold']">

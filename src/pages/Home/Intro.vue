@@ -1,7 +1,7 @@
 <template>
   <section id="intro" class="container">
       <div class="grid">
-        <div class="item m-2">
+        <div class="grid-item m-2-3">
           <div class="box">
             <h2 v-html="$t('HOME.INTRO.TITLE')"></h2>
 
@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <div class="item m-2">
+        <div class="grid-item m-3 vertical-center">
           <div class="box code-img-wrapper">
             <img src="../../assets/code.png" alt="Code icone">
           </div>
@@ -45,6 +45,11 @@ export default {
       height: 0
       border-top: 0.1em solid $green
 
+  .vertical-center
+    display: flex
+    align-items: center
+    justify-content: center
+
   .code-img-wrapper
     position: relative
 
@@ -52,5 +57,4 @@ export default {
       display: block
       max-width: 100%
       height: auto
-      margin: auto
 </style>

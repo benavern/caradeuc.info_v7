@@ -12,7 +12,7 @@
 
     <div class="grid">
 
-      <div class="item m-2 xxl-3"
+      <div class="grid-item m-2 xxl-3"
            v-for="(font, index) in fonts"
            :key="index">
         <div class="box">

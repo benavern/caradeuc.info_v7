@@ -15,7 +15,7 @@
     <hr>
 
     <div class="grid">
-      <div class="item m-2">
+      <div class="grid-item m-2">
         <div class="box">
           <h5>
             {{ $t('EXAMPLE') }}
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="item m-2">
+      <div class="grid-item m-2">
         <div class="box">
           <h5>
             {{ $t('RESULT') }}
