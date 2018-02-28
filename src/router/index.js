@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 import {
   Home,
-  Components
+  Components,
+  Contact
 } from '@/pages'
 
 Vue.use(Router)
@@ -21,7 +22,6 @@ export default new Router({
       }
     },
 
-    // Remove on production ?
     {
       path: '/components',
       name: 'Components',
@@ -29,6 +29,16 @@ export default new Router({
       meta: {
         displayName: 'MENU.MY_COMPONENTS.NAME',
         description: 'MENU.MY_COMPONENTS.DESCRIPTION'
+      }
+    },
+
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
+      meta: {
+        displayName: 'MENU.CONTACT.NAME',
+        description: 'MENU.CONTACT.DESCRIPTION'
       }
     }
   ]

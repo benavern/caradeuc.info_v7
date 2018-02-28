@@ -16,7 +16,18 @@
       "MY_COMPONENTS": {
         "NAME": "Terrain de jeu",
         "DESCRIPTION": "Pour construire ce site"
+      },
+      "CONTACT": {
+        "NAME": "Contact",
+        "DESCRIPTION": "Discutons ensemble!"
       }
+    },
+
+    "FOOTER": {
+      "TITLE": "CONTACTEZ-MOI!",
+      "SUBTITLE": "Une question, une remarque ? Je tâcherai de de vous satisfaire.",
+      "CONTACT": "CONTACT",
+      "COPYRIGHT": "Designé et codé avec <span class=\"color-green\">#{symbole}</span> par moi."
     },
 
     "HOME": {
@@ -97,9 +108,19 @@
       "MY_COMPONENTS": {
         "NAME": "Playground",
         "DESCRIPTION": "For building this website"
-      }
-    },
+      },
+        "CONTACT": {
+          "NAME": "Contact",
+          "DESCRIPTION": "Let's talk!"
+        }
+      },
 
+      "FOOTER": {
+        "TITLE": "LET's TALK!",
+        "SUBTITLE": "A question, a remarque ? I'll try to satisfy you.",
+        "CONTACT": "CONTACT",
+        "COPYRIGHT": "Designed and coded with <span class=\"color-green\">#{symbole}</span> by me."
+      },
     "HOME": {
       "HEROZONE": {
         "GREATING": "HELLO! <br> I AM BENJAMIN.",

@@ -1,27 +1,27 @@
 <template>
   <section id="intro" class="container">
-      <div class="grid">
-        <div class="grid-item m-2-3">
-          <div class="box">
-            <h2 v-html="$t('HOME.INTRO.TITLE')"></h2>
+    <div class="grid">
+      <div class="grid-item m-2-3">
+        <div class="box">
+          <h2 v-html="$t('HOME.INTRO.TITLE')"></h2>
 
-            <p>
-              {{ $t('HOME.INTRO.TEXT1') }}
-            </p>
+          <p>
+            {{ $t('HOME.INTRO.TEXT1') }}
+          </p>
 
-            <p>
-              {{ $t('HOME.INTRO.TEXT2') }}
-            </p>
-          </div>
-        </div>
-
-        <div class="grid-item m-3 vertical-center">
-          <div class="box code-img-wrapper">
-            <img src="../../assets/code.png" alt="Code icone">
-          </div>
+          <p>
+            {{ $t('HOME.INTRO.TEXT2') }}
+          </p>
         </div>
       </div>
-    </section>
+
+      <div class="grid-item m-3 vertical-center">
+        <div class="box code-img-wrapper">
+          <img src="../../assets/code.png" alt="Code icone">
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
