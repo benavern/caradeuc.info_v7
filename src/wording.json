@@ -40,6 +40,28 @@
         "TITLE": "<span class=\"color-green\">DÉVELOPPEMENT</span> WEB<br><span class=\"line-through\">UN TRAVAIL</span> <span class=\"color-green\">UNE PASSION</span>",
         "TEXT1": "Je suis un développeur front-end de 27 ans, avec plus de 2 ans et demi d'expérience en entreprise. Je travaille aujourd'hui comme prestataire pour un service de télévision sur le web.",
         "TEXT2": "Je ne suis pas en recherche active d'oportunités mais reste à l'écoute de propositions qui changeraient la donne..."
+      },
+      "WEBSITES": {
+        "CV": {
+          "NAME": "Mon CV",
+          "DESCRIPTION": "Avec le boom des sites internet de recherche d'emplois, des réseaux sociaux professionnels et des banques de CV en ligne, le CV numérique est devenu un atout indispensable, voici le mien."
+        },
+        "BLOG": {
+          "NAME": "Mon blog",
+          "DESCRIPTION": "C'est l'endroit où j'annonce mes réalisations, où je poste mes astuces de développement et tout ce qui me passe par la tête que j'ai envie de partager sur ce blog."
+        },
+        "PORTFOLIO": {
+          "NAME": "Mon portfolio",
+          "DESCRIPTION": "Ici, j'expose quelques-unes des mes réalisations dans l'ordre chronologique, on peut donc y apprécier mon évolution."
+        },
+        "LABO": {
+          "NAME": "Mon labo",
+          "DESCRIPTION": "Je me suis réservé une partie de mon hébergement pour y stocker certaines de mes idées, réalisations, démonstrations, documentations..."
+        },
+        "PHOTOS": {
+          "NAME": "Mes photos",
+          "DESCRIPTION": "J'aime la photo et essaie de faire des photos sympas durant mes voyages et promenades. Voici donc une gallerie, que j'ai entièrement codée main et y ai ajouté certains de mes propres plugins."
+        }
       }
     },
 
@@ -131,6 +153,28 @@
         "TITLE": "WEB <span class=\"color-green\">DEVELOPMENT</span><br><span class=\"line-through\">A JOB</span> <span class=\"color-green\">A PASSION</span>",
         "TEXT1": "I am a 27 years old front-end developer, with over 2 and a half years of experience in companies. Today I work as a contractor for a french web-television provider.",
         "TEXT2": "For now, I am not actively looking for a job but remain attentive to those who will have very convincing proposals."
+      },
+      "WEBSITES": {
+        "CV": {
+          "NAME": "My Curriculum",
+          "DESCRIPTION": "With the arrival of many job research websites, professionnal social networks and online curriculum databases, the numeric curriculum has become indispensible, here is mine."
+        },
+        "BLOG": {
+          "NAME": "My blog",
+          "DESCRIPTION": "This is the place where I post my new realisations announcements, development tips, and everything that comes out of my head, that I want to share on this blog."
+        },
+        "PORTFOLIO": {
+          "NAME": "My portfolio",
+          "DESCRIPTION": "Here, I expose some of my realisations in a chronological order, so you can see how I improved myself through time."
+        },
+        "LABO": {
+          "NAME": "My lab",
+          "DESCRIPTION": "I kept myself a little space on my website so that I can put some of my ideas, demonstrations, documentations..."
+        },
+        "PHOTOS": {
+          "NAME": "My photos",
+          "DESCRIPTION": "I built myself a photo gallery so that I can share some of the pictures I took during travels."
+        }
       }
     },
 
