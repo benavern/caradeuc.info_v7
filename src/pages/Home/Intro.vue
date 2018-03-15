@@ -1,5 +1,5 @@
 <template>
-  <section id="intro" class="container">
+  <section id="intro" class="container heigh">
     <div class="grid">
       <div class="grid-item m-2-3">
         <div class="box">
