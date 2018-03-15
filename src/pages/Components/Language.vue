@@ -7,6 +7,8 @@
       {{ $t('MY_COMPONENTS_PAGE.LANGUAGE.DESCRIPTION') }}
     </p>
 
+    <p v-html="$t('MY_COMPONENTS_PAGE.LANGUAGE.DESCRIPTION2')"></p>
+
     <hr>
 
     <p v-html="$t('MY_COMPONENTS_PAGE.LANGUAGE.CURRENT_LANGUAGE', { currentLanguage })">Chargement ...</p>

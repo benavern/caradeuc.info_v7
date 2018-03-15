@@ -3,15 +3,20 @@
     <z-header />
     <div id="content">
       <router-view/>
+      <z-footer></z-footer>
     </div>
   </div>
 </template>
 
 <script>
 import ZHeader from '@/components/ZHeader'
+import ZFooter from '@/components/ZFooter'
 export default {
   name: 'App',
-  components: { ZHeader }
+  components: {
+    ZHeader,
+    ZFooter
+  }
 }
 </script>
 
