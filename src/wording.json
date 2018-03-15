@@ -109,6 +109,7 @@
       "LANGUAGE": {
         "TITLE": "Langue",
         "DESCRIPTION": "Parcequ'il n'y a aucune raison pour que je ne parle qu'aux français, je voulais que mon site soit lisible par tout le monde.",
+        "DESCRIPTION2": "J'ai utilisé un plugin vue que j'ai développé qui est disponible sur <a href=\"https://github.com/benavern/vue-wording\">github</a> & <a href=\"https://www.npmjs.com/package/vue-wording\">npm</a>, il s'appelle <b>VUE-WORDING</b>.",
         "CURRENT_LANGUAGE": "La langue sélectionnée est : <b>#{currentLanguage}</b>"
       }
     }
@@ -222,6 +223,7 @@
       "LANGUAGE": {
         "TITLE": "Language",
         "DESCRIPTION": "Because there is no reason to speak to french people only, I wanted my website to be readable for everyone.",
+        "DESCRIPTION2": "I've used a plugin I did myself and published on <a href=\"https://github.com/benavern/vue-wording\">github</a> & <a href=\"https://www.npmjs.com/package/vue-wording\">npm</a>, it is called <b>VUE-WORDING</b>",
         "CURRENT_LANGUAGE": "The current language is : <b>#{currentLanguage}</b>"
       }
     }

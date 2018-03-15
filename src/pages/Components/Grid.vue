@@ -99,7 +99,7 @@
             {{ $t('EXAMPLE') }}
           </h5>
 
-<pre data-file="grid.vue" v-pre>
+<pre data-file="grid.html" v-pre>
 &lt;div class="grid"&gt;
 
   &lt;div class="grid-item"&gt;
